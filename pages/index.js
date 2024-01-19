@@ -59,6 +59,7 @@ export default function Index({ data, header }) {
         </AnimWrapper>
       </div>
       <BackgroundImage
+        imageClassName="object-cover w-full h-full object-left md:object-center"
         containerClassName="min-h-screen w-full  z-20 relative flex items-end justify-start"
         image={data.water}
         key={data.water}
@@ -80,7 +81,7 @@ export default function Index({ data, header }) {
                 <AnimWrapper
                   delay={isLg ? i * 0.3 : 0}
                   key={item.heading}
-                  className="flex flex-col justify-between h-full p-5 text-center md:py-7 md:px-10 item-bg"
+                  className="flex flex-col justify-between h-full max-w-sm p-5 mx-auto text-center md:py-7 md:px-10 item-bg"
                 >
                   <p className="pb-5 text-3xl uppercase font-display md:text-4xl">
                     {item.heading}

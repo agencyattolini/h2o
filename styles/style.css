@@ -14,15 +14,9 @@
   text-rendering: optimizeLegibility;
 }
 
-*,
-html {
-  scroll-behavior: smooth !important;
-}
-
 html,
 body {
   scroll-padding-top: 0rem;
-  scroll-behavior: smooth;
 }
 
 ::selection {
