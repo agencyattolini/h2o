@@ -1,0 +1,116 @@
+backend:
+  name: git-gateway
+  # name: github
+  repo: vradionovskii/miks-conf
+  branch: main
+media_folder: public/images
+public_folder: /images
+locale: ru
+show_preview_links: false
+collections:
+  - name: seo
+    extension: json
+    format: json
+    label: Конфигурация
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: SEO
+        name: siteSeo
+        file: cms/config/seo.json
+        fields:
+          - label: URL
+            name: URL
+            widget: string
+          - label: Титул сайта
+            name: siteTitle
+            widget: string
+          - label: Описание сайта
+            name: siteDescription
+            widget: text
+          - label: Превью
+            name: socialCover
+            widget: image
+          - label: Ключевые слова
+            name: keywords
+            widget: text
+      - label: Шапка
+        name: header
+        file: cms/config/header.json
+        fields:
+          - label: Анонс
+            name: announcement
+            widget: object
+            fields:
+              - label: Текст
+                name: title
+                widget: string
+              - label: Ссылка
+                name: link
+                widget: string
+          - label: Лого
+            name: logo
+            widget: object
+            fields:
+              - label: Изображение
+                name: image
+                widget: image
+              - label: Ссылка
+                name: link
+                widget: string
+          - label: Навигация
+            name: links
+            widget: list
+            summary: "{{fields.text}}"
+            field:
+              label: Страница
+              name: item
+              widget: object
+              fields:
+                - label: Текст
+                  name: title
+                  widget: string
+                - label: Ссылка
+                  name: link
+                  widget: string
+          - label: Поднавигация
+            name: linksTwo
+            widget: list
+            summary: "{{fields.text}}"
+            field:
+              label: Страница
+              name: item
+              widget: object
+              fields:
+                - label: Текст
+                  name: title
+                  widget: string
+                - label: Ссылка
+                  name: link
+                  widget: string
+          - label: Бронирование
+            name: booking
+            widget: object
+            fields:
+              - label: Текст
+                name: title
+                widget: string
+              - label: Ссылкаs
+                name: link
+                widget: string
+  - label: Страницы
+    name: pages
+    extension: json
+    format: json
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: Главная
+        name: homepage
+        file: cms/pages/homepage.json
+        fields:
+          - label: Титул
+            name: title
+            widget: string

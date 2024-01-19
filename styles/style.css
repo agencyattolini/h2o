@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-dark: #1e1e1e;
+  }
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
+html,
+body {
+  scroll-padding-top: 0rem;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #67a3ac;
+  color: white;
+  text-shadow: none;
+}
+
+/* Classes */
+.item-bg {
+  border-radius: 29px;
+  background: linear-gradient(
+    113deg,
+    rgba(207, 207, 207, 0.26) 0%,
+    rgba(207, 207, 207, 0.06) 92.87%
+  );
+  backdrop-filter: blur(15px);
+}
+
+.text-theme {
+  @apply text-lg font-light whitespace-pre-line md:text-xl;
+}
+.heading-theme {
+  @apply text-3xl font-extrabold uppercase whitespace-pre-line md:text-4xl;
+}
+
+.simple-container,
+.page-container {
+  width: 90%;
+  max-width: 82.5rem;
+}
+.page-container {
+  @apply mx-auto space-y-10 pt-14 md:pt-24 md:pb-24 pb-14 md:space-y-16;
+}
+.center-xy {
+  @apply -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2;
+}
+.heading-theme {
+  @apply whitespace-pre-line;
+}
+.text-theme {
+  @apply whitespace-pre-line;
+}
+.column-2 {
+  column-count: 1;
+  column-gap: 2rem;
+  column-fill: balance;
+}
+.text-gold {
+  color: #e8d188;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.bg-grad {
+  background: linear-gradient(
+    180deg,
+    hsla(45, 85%, 0%, 0) 0%,
+    hsla(0, 0%, 100%, 0.8) 30%,
+    rgb(255, 255, 255) 90%
+  );
+}
+
+.markdown-text {
+  white-space: pre-line;
+  line-height: 1.5;
+}
+.markdown-text * {
+  white-space: pre-line !important;
+}
+.markdown-text ul {
+  line-height: 1.35;
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+.markdown-text li {
+  white-space: normal !important;
+}
+#__next {
+  position: relative;
+}
+.grid-centering {
+  grid-column: span 2;
+}
+@media (min-width: 768px) {
+  .column-2 {
+    column-count: 2;
+  }
+  .simple-container,
+  .page-container {
+    width: 95%;
+  }
+  .grid-centering:last-child:nth-child(3n - 1) {
+    grid-column-end: -2;
+  }
+
+  .grid-centering:nth-last-child(2):nth-child(3n + 1) {
+    grid-column-end: 4;
+  }
+
+  /* Dealing with single orphan */
+
+  .grid-centering:last-child:nth-child(3n - 2) {
+    grid-column-end: 5;
+  }
+}
+
+@media (min-width: 1280px) {
+  .simple-container,
+  .page-container {
+    width: 90%;
+  }
+}

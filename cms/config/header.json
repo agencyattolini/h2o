@@ -1,0 +1,51 @@
+{
+  "logo": "/images/logo.png",
+  "logoLight": "/images/logo-light.png",
+  "write": "Scrivici",
+  "placeholder": "Enter your mail",
+  "button": "inviare",
+  "phoneIcon": "/images/phone.svg",
+  "mailIcon": "/images/mail.svg",
+  "phone": "+ 00000000",
+  "mail": "mail.com",
+  "links": [
+    {
+      "item": {
+        "text": "Chi siamo",
+        "link": "#chi-siamo"
+      }
+    },
+    {
+      "item": {
+        "text": "Dove siamo",
+        "link": "#dove-siamo"
+      }
+    },
+    {
+      "item": {
+        "text": "Testimonianze",
+        "link": "#testimonianze"
+      }
+    },
+    {
+      "item": {
+        "text": "Lascia una testimonianza",
+        "link": "#lascia-una-testimonianza"
+      }
+    }
+  ],
+  "socials": [
+    {
+      "item": {
+        "icon": "/images/facebook.svg",
+        "link": "https://www.facebook.com/"
+      }
+    },
+    {
+      "item": {
+        "icon": "/images/insta.svg",
+        "link": "https://instagram.com/"
+      }
+    }
+  ]
+}
