@@ -1,7 +1,6 @@
 import AnimWrapper from "@components/AnimWrapper";
 import Hero from "@components/Hero";
 import { getFluidImage } from "@components/image/imageFunctions";
-import Markdown from "@components/utils/Markdown";
 import Formic from "@components/Formic";
 import BackgroundImage from "@components/image/BackgroundImage";
 import { useIsLg } from "@components/utils/useMediaQuery";
@@ -32,12 +31,14 @@ export default function Index({ data, header }) {
               style={{
                 background: "rgba(255, 255, 255, 0.46)",
               }}
-              className=" mdtranslate-x-1/2 backdrop-blur-lg -translate-y-[80%] md:-translate-y-[75%] rounded-3xl border-black border p-5"
+              className=" mdtranslate-x-1/2 backdrop-blur-lg -translate-y-[90%] md:-translate-y-[95%] rounded-3xl border-black border p-5"
             >
               <div className="flex items-center justify-center">
-                <Markdown className="m-auto text-sm leading-tight text- markdown-text md:text-lg">
-                  {data.mapText}
-                </Markdown>
+                <img
+                  src={data.logo}
+                  alt="logo"
+                  className="h-auto w-36 md:w-48"
+                />
               </div>
             </div>
           </div>
