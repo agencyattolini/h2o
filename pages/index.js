@@ -69,20 +69,20 @@ export default function Index({ data, header }) {
         alt=""
         id="testimonianze"
       >
-        <div className="py-0 text-white page-container min-h-screen  h-full flex justify-center flex-col  lg:py-0 !space-y-0">
+        <div className="py-0 text-white page-container !max-w-[100rem] min-h-screen  h-full flex justify-center flex-col   !space-y-0">
           <h3 className="pb-3 mr-auto text-4xl font-normal uppercase lg:ml-10 md:pb-6 md:text-7xl font-display">
             {data.headingThree}
           </h3>
           <p className="pb-8 mr-auto font-bold uppercase text-l lg:ml-10 md:pb-8 md:text-2xl">
             {data.headingFour}
           </p>
-          <div className="items-center justify-center space-y-10 lg:grid lg:grid-cols-3 lg:gap-12 lg:space-y-0">
+          <div className="items-center justify-center space-y-10 md:grid md:grid-cols-2 xl:grid-cols-4 md:gap-12 md:space-y-0">
             {typeof isLg === "boolean" &&
               data.itemsOne.map(({ item }, i) => (
                 <AnimWrapper
                   delay={isLg ? i * 0.3 : 0}
                   key={item.heading}
-                  className="flex flex-col justify-between h-full max-w-sm p-5 mx-auto text-center md:py-7 md:px-10 item-bg"
+                  className="flex flex-col justify-between w-full h-full max-w-sm p-5 mx-auto text-center md:max-w-md md:py-7 md:px-10 item-bg"
                 >
                   <p className="pb-5 text-3xl uppercase font-display md:text-4xl">
                     {item.heading}
@@ -90,7 +90,7 @@ export default function Index({ data, header }) {
                   <img
                     src={item.icon}
                     alt={item.heading}
-                    className="w-full max-h-[24rem] object-contain mx-auto max-w-[12rem] lg:max-w-none"
+                    className="w-full max-h-[12rem] object-contain mx-auto  max-w-[12rem] md:max-w-none"
                   />
                   <a
                     href={item.link}

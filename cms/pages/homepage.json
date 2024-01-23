@@ -35,6 +35,14 @@
         "button": "Schede prodotto",
         "link": "#"
       }
+    },
+    {
+      "item": {
+        "heading": "Frigo sopra il lavello",
+        "icon": "/images/6 1.png",
+        "button": "Schede prodotto",
+        "link": "#"
+      }
     }
   ],
   "headingFive": "LASCIA UNA TESTIMONIANZA",
