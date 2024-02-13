@@ -12,8 +12,8 @@ export default function handler(req, res) {
 
   const mailData = {
     from: "mail@contentpanel.xyz",
-    to: "mail@attoliniagency.com",
-    subject: `PurH²O  message from ${req.body.mail}`,
+    to: "assistenza@eleva-corporate.com",
+    subject: `PurH₂O  message from ${req.body.mail}`,
     text: `New email subscriber, email: ${req.body.mail}`,
     html: `<p>New email subscriber, email: ${req.body.mail}</p>`,
   };

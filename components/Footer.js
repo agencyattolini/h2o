@@ -33,7 +33,7 @@ export default function Footer({ data }) {
           </div>
         </div>
         <div className="justify-start w-full mt-12 md:flex">
-          <div className="flex items-center mr-auto space-x-4">
+          <div className="flex items-center space-x-4 mr-44">
             {data.socials.map(({ item }) => (
               <a
                 key={item.icon}
@@ -48,13 +48,6 @@ export default function Footer({ data }) {
           </div>
 
           <div className="py-6 space-y-4 md:flex md:space-x-8 md:py-0 md:space-y-0">
-            <a
-              href={`mailto:${data.mail}`}
-              className="flex items-center text-lg duration-200 focus-visible:opacity-60 hover:opacity-60"
-            >
-              <img src={data.mailIcon} alt="Email" className="w-10 h-10 mr-3" />
-              {data.mail}
-            </a>
             <a
               href={`tel:${data.phone}`}
               className="flex items-center text-lg duration-200 focus-visible:opacity-60 hover:opacity-60"

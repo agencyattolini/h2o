@@ -14,51 +14,7 @@ export default function Index({ data, header }) {
   return (
     <>
       <Hero header={header} data={data} />
-      <div
-        id="dove-siamo"
-        className="pt-12 pb-8 page-container md:pt-12 md:pb-8"
-      >
-        <h2
-          className={`uppercase text-6xl md:text-7xl text-[#7DC0CB] font-normal font-display`}
-        >
-          {data.headingTwo}
-        </h2>
-      </div>
-      <div className="md:flex">
-        <div className="relative md:w-1/2">
-          <div className="absolute flex items-center justify-center w-full px-5 center-xy">
-            <div
-              style={{
-                background: "rgba(255, 255, 255, 0.46)",
-              }}
-              className=" mdtranslate-x-1/2 backdrop-blur-lg -translate-y-[90%] md:-translate-y-[95%] rounded-3xl border-black border p-5"
-            >
-              <div className="flex items-center justify-center">
-                <img
-                  src={data.logo}
-                  alt="logo"
-                  className="h-auto w-36 md:w-48"
-                />
-              </div>
-            </div>
-          </div>
 
-          <iframe
-            src={data.map}
-            className="w-full h-[35rem] md:h-screen"
-            allowFullScreen=""
-            title="map"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <AnimWrapper className="flex items-center justify-center mx-5 md:w-1/2">
-          <AnimWrapper className="p-4 my-12 border-2 border-[#000] lg:px-16 max-w-xl  mx-auto lg:py-8 md:my-20 rounded-3xl">
-            <h2 className="text-lg md:text-base">{data.textTwo}</h2>
-            <Formic />
-          </AnimWrapper>
-        </AnimWrapper>
-      </div>
       <BackgroundImage
         imageClassName="object-cover w-full h-full object-left md:object-center"
         containerClassName="min-h-screen w-full  z-20 relative flex items-end justify-start"
@@ -170,6 +126,51 @@ export default function Index({ data, header }) {
             </div>
           </AnimWrapper>
         </div>
+      </div>
+      <div
+        id="dove-siamo"
+        className="pt-12 pb-8 page-container md:pt-12 md:pb-8"
+      >
+        <h2
+          className={`uppercase text-6xl md:text-7xl text-[#7DC0CB] font-normal font-display`}
+        >
+          {data.headingTwo}
+        </h2>
+      </div>
+      <div className="md:flex">
+        <div className="relative md:w-1/2">
+          <div className="absolute flex items-center justify-center w-full px-5 center-xy">
+            <div
+              style={{
+                background: "rgba(255, 255, 255, 0.46)",
+              }}
+              className=" mdtranslate-x-1/2 backdrop-blur-lg -translate-y-[90%] md:-translate-y-[95%] rounded-3xl border-black border p-5"
+            >
+              <div className="flex items-center justify-center">
+                <img
+                  src={data.logo}
+                  alt="logo"
+                  className="h-auto w-36 md:w-48"
+                />
+              </div>
+            </div>
+          </div>
+
+          <iframe
+            src={data.map}
+            className="w-full h-[35rem] md:h-screen"
+            allowFullScreen=""
+            title="map"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <AnimWrapper className="flex items-center justify-center mx-5 md:w-1/2">
+          <AnimWrapper className="p-4 my-12 border-2 border-[#000] lg:px-16 max-w-xl  mx-auto lg:py-8 md:my-0 rounded-3xl">
+            <h2 className="text-lg md:text-base">{data.textTwo}</h2>
+            <Formic />
+          </AnimWrapper>
+        </AnimWrapper>
       </div>
     </>
   );

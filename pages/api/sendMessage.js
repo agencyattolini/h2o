@@ -13,9 +13,9 @@ export default function handler(req, res) {
   const mailData = {
     from: "mail@contentpanel.xyz",
     to: "assistenza@eleva-corporate.com",
-    subject: `PurH₂O  message from ${req.body.name}`,
-    text: req.body.name + " | Sent by: " + req.body.tel,
-    html: `<p>${req.body.name} ${req.body.name2}, Tel: ${req.body.tel}</p>`,
+    subject: `PurH₂O message from ${req.body.name}`,
+    text: req.body.name + " | Sent by: " + req.body.mail,
+    html: `<div>${req.body.name} ${req.body.name2}, ${req.body.mail}</div><p>Email: ${req.body.mail}</p><p>Message: ${req.body.message}</p>`,
   };
 
   transporter.sendMail(mailData, (err) => {
