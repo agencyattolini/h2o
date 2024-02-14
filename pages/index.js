@@ -29,9 +29,9 @@ export default function Index({ data, header }) {
           <h3 className="pb-3 mr-auto text-4xl font-normal uppercase lg:ml-10 md:pb-6 md:text-7xl font-display">
             {data.headingThree}
           </h3>
-          <p className="pb-8 mr-auto font-bold uppercase text-l lg:ml-10 md:pb-8 md:text-2xl">
+          {/* <p className="pb-8 mr-auto font-bold uppercase text-l lg:ml-10 md:pb-8 md:text-2xl">
             {data.headingFour}
-          </p>
+          </p> */}
           <div className="items-center justify-center space-y-10 md:grid md:grid-cols-2 xl:grid-cols-4 md:gap-12 md:space-y-0">
             {typeof isLg === "boolean" &&
               data.itemsOne.map(({ item }, i) => (

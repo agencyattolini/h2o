@@ -9,12 +9,12 @@
   "mapText": "**PurH₂O**\n\n**Address**\n**Telefono fisso:** [+39 00 00000000](tel:+390000000000)\n**Whatsapp:** [+39 000 0000000](tel:+39000000000)\n**Mail:** [assistenza@eleva-corporate.com](mailto:mail@mail.com)",
   "textTwo": "Prenota una visita totalmente gratuita per valutare insieme ad un nostro incaricato la migliore soluzione possibile in base alle tue esigenze!",
   "water": "/images/water.jpg",
-  "headingThree": "Testimonianze",
+  "headingThree": "SISTEMI",
   "headingFour": "Lascia una testimonianza",
   "itemsOne": [
     {
       "item": {
-        "heading": "HYPER",
+        "heading": "HYPER – OSMOSI",
         "icon": "/images/hyper - osmosi 1.png",
         "button": "Schede prodotto",
         "link": "#"
@@ -22,15 +22,15 @@
     },
     {
       "item": {
-        "heading": "FRIGO GAS",
-        "icon": "/images/2.png",
+        "heading": "FRIGO GAS UNDER",
+        "icon": "/images/Без заголовка 1.png",
         "button": "Schede prodotto",
         "link": "#"
       }
     },
     {
       "item": {
-        "heading": "FRIGO GAS UNDER ",
+        "heading": "FRIGO GAS BLACK",
         "icon": "/images/frigo gas black 1.png",
         "button": "Schede prodotto",
         "link": "#"
@@ -38,7 +38,7 @@
     },
     {
       "item": {
-        "heading": "Frigo sopra il lavello",
+        "heading": "FRIGO GAS",
         "icon": "/images/6 1.png",
         "button": "Schede prodotto",
         "link": "#"
