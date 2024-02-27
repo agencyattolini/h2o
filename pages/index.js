@@ -38,10 +38,13 @@ export default function Index({ data, header }) {
                 <AnimWrapper
                   delay={isLg ? i * 0.3 : 0}
                   key={item.heading}
-                  className="flex flex-col justify-between w-full h-full max-w-sm p-5 mx-auto text-center md:max-w-md md:py-7 md:px-10 item-bg"
+                  className="flex flex-col justify-between w-full h-full max-w-sm p-5 mx-auto text-center md:max-w-md md:py-7 md:px-8 item-bg"
                 >
-                  <p className="pb-5 text-3xl uppercase font-display md:text-4xl">
+                  <p className="pb-2.5 text-3xl uppercase font-display md:text-4xl">
                     {item.heading}
+                  </p>
+                  <p className="pb-2.5 text-xl !font-thin uppercase font-display md:text-2xl">
+                    {item.price}
                   </p>
                   <img
                     src={item.icon}
@@ -50,6 +53,7 @@ export default function Index({ data, header }) {
                   />
                   <a
                     href={item.link}
+                    target="_blank"
                     className="table px-8 py-4 mx-auto mt-4 capitalize border border-[rgba(255,_255,_255,_0.6)] rounded font-medium"
                   >
                     {item.button}

@@ -15,33 +15,37 @@
     {
       "item": {
         "heading": "HYPER – OSMOSI",
+        "price": "4450€",
         "icon": "/images/hyper - osmosi 1.png",
         "button": "Schede prodotto",
-        "link": "#"
+        "link": "/scheda tecnica purh2o hyper.pdf"
       }
     },
     {
       "item": {
         "heading": "FRIGO GAS UNDER",
+        "price": "4450€",
         "icon": "/images/Без заголовка 1.png",
         "button": "Schede prodotto",
-        "link": "#"
+        "link": "/schede tecniche FRIGO GAS UNDER.pdf"
       }
     },
     {
       "item": {
         "heading": "FRIGO GAS BLACK",
+        "price": "4950€",
         "icon": "/images/frigo gas black 1.png",
         "button": "Schede prodotto",
-        "link": "#"
+        "link": "/schede tecniche purh2o FRIGO GAS BLACK.pdf"
       }
     },
     {
       "item": {
         "heading": "FRIGO GAS",
+        "price": "4450€",
         "icon": "/images/6 1.png",
         "button": "Schede prodotto",
-        "link": "#"
+        "link": "/schede tecniche purh2o FRIGO GAS.pdf"
       }
     }
   ],

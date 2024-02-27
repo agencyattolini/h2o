@@ -19,6 +19,11 @@ const fontDisplay = localFont({
   src: [
     {
       path: "../fonts/RoadRadio.woff2",
+      weight: "400",
+    },
+    {
+      path: "../fonts/RoadRadio-Thin_latin_subset.woff2",
+      weight: "100",
     },
   ],
   fallback: ["ui-sans-serif"],
