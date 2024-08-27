@@ -60,13 +60,6 @@ export default function Footer({ data }) {
               {data.phone}
             </a>
           </div>
-          <a
-            href="https://attoliniagency.com"
-            target="_blank"
-            className="text-lg font-light md:mx-auto md:text-center md:text-2xl"
-          >
-            Attolini agency {new Date().getFullYear()}
-          </a>
         </div>
       </div>
     </footer>
